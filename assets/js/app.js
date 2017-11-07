@@ -1,6 +1,8 @@
 function enabled() {
 	var comments = document.getElementById('comment').value;
-	if (comments.length == 0){
+	var cantidad = 140 - comments.length;
+	document.getElementById('p1').innerHTML=cantidad;
+	if (comments.length == 0 || cantidad < 0){
 		document.getElementById("btn").disabled = true;
 		document.getElementById("btn").className = "btn-disabled";
 	}else{
@@ -26,11 +28,16 @@ function add(){
 	/*volver a preguntar por cada comentario*/
 	enabled();
 }
-
-function enabled(){
-	var comments= document.getElementById('comment').value;
-	var cantidad = 140 - comments.length
-	document.getElementById('p1').innerHTML=cantidad
+function numColor() {
+	var comments = document.getElementById('comment').value;
+	var cantidad = 140 - comments.length;
+	if (cantidad < 20 && cantidad >=10){
+		document.getElementById("tell").className = "tell-2";
+	}else if(cantidad < 10 && cantidad >=0){
+		document.getElementById("tell").className = "tell-3";
+	}else{
+		document.getElementById("tell").className = "tell-1";
+	}
 }
 
 

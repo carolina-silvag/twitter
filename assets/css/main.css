@@ -29,13 +29,20 @@ header{
 	margin-top: 4%;
 	padding: 2%;
 	float: left;
+	font-size: 150%;
 }
 .first p{
+	margin-top: 5%;
+	/*font-size: 150%;*/
+}
+hr{
+	margin-bottom: 5%;
 	margin-top: 5%;
 }
 .first h5{
 	margin-top: 5%;
 	color: blue;
+	/*font-size: 150%;*/
 }
 .second{
 	background-color: #fff;
@@ -49,7 +56,8 @@ header{
 textarea{
 	width: 100%;
 	border-style: none;
-	border-bottom: 1px solid #000;
+	border-bottom: 1px solid #1da1f2;
+	font-size: 200%;
 }
 textarea:focus{
     outline: none; 
@@ -63,19 +71,33 @@ textarea:focus{
 	border-style: none; 
 }
 .btn-disabled{
-	background-color: #6ad2f3;
+	background-color: #e0e5e4;
 	opacity: 0.8;
-	color: #fff;
+	color: #8a8a8e;
 	padding: 2% 5% 2% 5%;
 	margin-top: 2%;
 	border-style: none; 
 }
-.tell{
+.tell-1{
 	display: inline-block;
-	outline: 1px solid red;
 	color: #1da1f2;
 	float: right;
 	margin: 3%;
+	font-size: 120%;
+}
+.tell-2{
+	display: inline-block;
+	color: blue;
+	float: right;
+	margin: 3%;
+	font-size: 120%;
+}
+.tell-3{
+	display: inline-block;
+	color: red;
+	float: right;
+	margin: 3%;
+	font-size: 120%;
 }
 #cont{
 	margin: 10%;
@@ -85,4 +107,5 @@ textarea:focus{
 	margin-bottom: 2em;
 	border-radius: 5px;
 	background-color: #FFF;
+	font-size: 150%;
 }
