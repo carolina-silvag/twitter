@@ -55,12 +55,27 @@ textarea:focus{
     outline: none; 
 }
 /*boton tweet*/
-#btn{
-	background-color: #6ad2f3;
+.btn-enabled{
+	background-color: #1da1f2;
 	color: #fff;
 	padding: 2% 5% 2% 5%;
 	margin-top: 2%;
 	border-style: none; 
+}
+.btn-disabled{
+	background-color: #6ad2f3;
+	opacity: 0.8;
+	color: #fff;
+	padding: 2% 5% 2% 5%;
+	margin-top: 2%;
+	border-style: none; 
+}
+.tell{
+	display: inline-block;
+	outline: 1px solid red;
+	color: #1da1f2;
+	float: right;
+	margin: 3%;
 }
 #cont{
 	margin: 10%;
