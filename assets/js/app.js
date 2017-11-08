@@ -40,4 +40,12 @@ function numColor() {
 	}
 }
 
+function agrandar(){
+	var comments = document.getElementById('comment').value;
+	var linea = comments.split('\n');
+		if(linea.length - 1 >= 3){
+			contar+=1;
+			document.getElementById('comment').rows = linea.length - 1;
+		}
+}
 
